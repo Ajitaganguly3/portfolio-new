@@ -10,7 +10,7 @@ module.exports = {
       colors: {
         dark: "#000000",
         light: "#ffffff",
-        primary: "#0d9488",
+        primary: "#808080",
       },
       backgroundImage: {
         circularLight:

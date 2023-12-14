@@ -25,14 +25,14 @@ function CustomizedTextField(props) {
         },
         "& .MuiOutlinedInput-root": {
           "& fieldset": {
-            borderColor: "#66bfbf",
+            borderColor: "#808080",
           },
           "&:hover fieldset": {
             borderColor: "#000000",
           },
         },
         "& .MuiInputLabel-shrink": {
-          color: "#66bfbf",
+          color: "#808080",
         },
       }}
     />
@@ -42,7 +42,7 @@ function CustomizedTextField(props) {
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#66bfbf",
+      main: "#808080",
     },
     background: {
       default: "#ffffff",
@@ -116,7 +116,7 @@ export default function Contact() {
                 type="submit"
                 fullWidth
                 variant="contained"
-                sx={{ mt: 3, mb: 2 }}
+                sx={{ mt: 3, mb: 9, color: 'black', fontWeight: 'bold' }}
               >
                 Submit
               </Button>

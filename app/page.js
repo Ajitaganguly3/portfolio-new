@@ -56,7 +56,7 @@ export default function Home() {
             <div className="flex gap-2 items-center self-start mt-2 ">
               <Link
                 showAnchorIcon
-                href="/resume.pdf"
+                href="/Resume.pdf"
                 target={"_blank"}
                 rel="noopener noreferrer"
                 className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold"
