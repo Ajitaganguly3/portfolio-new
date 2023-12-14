@@ -20,9 +20,9 @@ export const GithubIcon = ({ className, ...rest }) => (
 export const TwitterIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width='1em'
-    height='1em'
-    viewBox='0 0 256 209'
+    width="1em"
+    height="1em"
+    viewBox="0 0 256 209"
     {...rest}
     className={`w-full h-auto ${className}`}
   >

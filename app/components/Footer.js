@@ -13,14 +13,8 @@ const Footer = () => {
         bottom: 0,
       }}
     >
-      <Box
-        display="flex"
-        alignItems="center"
-        justifyContent="center"
-        mt={2}
-      >
-       
-         <Typography
+      <Box display="flex" alignItems="center" justifyContent="center" mt={2}>
+        <Typography
           variant="body2"
           color="text.secondary"
           align="center"
@@ -38,6 +32,6 @@ const Footer = () => {
       </Box>
     </Box>
   );
-}
+};
 
 export default Footer;

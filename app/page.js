@@ -1,17 +1,21 @@
 "use client";
-
 import Head from "next/head";
 import Image from "next/image";
+import profilePic from "../public/ProfilePic.jpg";
+import AnimatedText from "./components/AnimatedText";
 import {
   Card,
   CardContent,
   Container,
+  CssBaseline,
   Grid,
   Stack,
+  TextField,
+  ThemeProvider,
   Typography,
+  createTheme,
 } from "@mui/material";
 import { Link } from "@nextui-org/react";
-import AnimatedText from "./components/AnimatedText";
 
 export default function Home() {
   return (
@@ -23,17 +27,19 @@ export default function Home() {
               position: "relative",
               overflow: "hidden",
               width: "100%",
-              height: "70vh",
+              height: "80vh",
               borderRadius: "0 30% 30% 0",
               marginRight: "10%",
             }}
           >
             <Image
-              src="/ProfilePic.jpg"
+              src={profilePic}
               alt="profilePic"
+              // className="w-full h-auto"
               layout="fill"
               objectFit="cover"
               objectPosition="center top"
+              style={{ marginRight: "20%" }}
             />
           </div>
           <div className="w-1/2 flex flex-col items-center self-center">
@@ -44,7 +50,7 @@ export default function Home() {
             <p className="my-4 text-base font-medium">
               As a skilled full-stack developer, I am dedicated to turning ideas
               into innovative web applications. Explore my latest projects,
-              showcasing my expertise in React.js, web development, and backend
+              showcasing my expertise in React.js, web development and backend
               development.
             </p>
             <div className="flex gap-2 items-center self-start mt-2 ">
@@ -54,6 +60,7 @@ export default function Home() {
                 target={"_blank"}
                 rel="noopener noreferrer"
                 className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold"
+                sx={{ mt: 3, mb: 2 }}
               >
                 Resume
               </Link>
@@ -89,7 +96,7 @@ export default function Home() {
           height: "15vh",
         }}
       >
-        <h1>
+        <h3>
           <a href="#"></a>
           <span
             style={{
@@ -107,7 +114,7 @@ export default function Home() {
           >
             Career
           </span>
-        </h1>
+        </h3>
       </div>
       <Container maxWidth="lg">
         <Stack spacing={3} mb={5} mt={5}>

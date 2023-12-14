@@ -1,4 +1,3 @@
-// import Skills from "../components/Skills";
 import { motion } from "framer-motion";
 
 export default function About() {
